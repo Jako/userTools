@@ -32,6 +32,7 @@ $output = '';
 
 require_once ($usertools->config['modelPath'] . 'search.class.php');
 
+$results = '';
 if (empty($id)) {
   $user = $modx->getUser();
   $profile = $user->getOne('Profile');
